@@ -2,6 +2,10 @@
 
 A Flask-based HLS stream proxy that manages live video streams from multiple sources, validates stream integrity, and serves them through dynamic M3U playlists. Designed to work with Channels DVR for intelligent stream selection and automatic failover management.
 
+## Support the Project
+If you like my work, feel free to buy me a coffee! ☕
+https://buymeacoffee.com/BluberrySmoothie
+
 ## Features
 
 - **Multi-source Stream Management**: Handles streams from multiple sources with configurable priority and concurrency limits
