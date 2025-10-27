@@ -172,8 +172,8 @@ FFPROBE_TIMEOUT = 10           # Timeout for FFprobe validation (seconds)
 Control concurrent streams per source to prevent overwhelming upstream providers:
 
 ```python
-SOURCE_PRIORITY = ["XCodes"]   # Priority order for sources
-SOURCE_LIMITS = {"XCodes": 5}  # Max 5 simultaneous streams from XCodes
+SOURCE_PRIORITY = ["Source1", "Source2"]   # Priority order for sources
+SOURCE_LIMITS = {"Source1": 5, "Source2": 4}  # Max 5 simultaneous streams from Source1, 5 for source2
 ```
 
 When a source reaches its limit, the proxy will try other sources before queuing the request.
