@@ -65,12 +65,12 @@ Edit `proxy_server.py` and update these configuration values:
 
 ```python
 PORT = 9090                              # HTTP port for the proxy
-DB_PATH = r"E:\\media_importer\\vod.db" # Path to SQLite database
-CHANNELS_DVR_URL = "http://192.168.1.208:8089/dvr"  # Channels DVR API URL
+DB_PATH = r"C:\\YourPath\\vod.db"        # Path to SQLite database
+CHANNELS_DVR_URL = "http://123.456.789.012:8089/dvr" # Channels DVR API URL
 
 QUALITY_PRIORITY = ["1", "2", ...]      # Stream quality ranking (lower = higher priority)
-SOURCE_PRIORITY = ["XCodes"]             # Source ranking
-SOURCE_LIMITS = {"XCodes": 5}            # Max concurrent streams per source
+SOURCE_PRIORITY = ["Source1", "Source2"]           # Source ranking
+SOURCE_LIMITS = {"Source1": 5, "Source2": 4}           # Max concurrent streams per source
 
 TARGET_VIDEO_BITRATE = "5M"              # Output video bitrate
 TARGET_AUDIO_BITRATE = "128k"            # Output audio bitrate
